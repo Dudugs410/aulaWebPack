@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="calc.js"></script>
+    <script src="full_name.js"></script>
     
     <title>Exercício Obrigatório</title>
 </head>
@@ -13,13 +14,33 @@
     
     <h1>Ola GitHub</h1>
     
-    <div class="cardSum">
+    <div class="cardCalc">
 
         <div><input type="text" placeholder="Type a Number" id="num_01"></div>
         <div><input type="text" placeholder="Type a Number" id="num_02"></div>
-        <div><button id="execSum" onclick="executeSum()">Sum</button></div>
-        <div>Resultado: </div>
-        <p id="resultSum"></p>
+        
+        <div>
+            <button id="execSum" onclick="Sum()">Sum</button>
+            <button id="execSub" onclick="Sub()">Sub</button>
+        </div>
+
+        <div>
+            <button id="execMult" onclick="Mult()">Mult</button>
+            <button id="execDiv" onclick="Divide()">Div</button>
+        </div>
+        
+        <div>Result: </div>
+        <p id="resultOp"></p>
+
+    </div>
+
+    <div class="cardConcatenate">
+
+        <div><input type="text" placeholder="Enter First Name" id="name"></div>
+        <div><input type="text" placeholder="Enter Last Name" id="lastName"></div>
+        <div><button id="execConcatenate" onclick="executeConcatenation()">Concatenate</button></div>
+        <div>Result: </div>
+        <p id="fullName"></p>
 
     </div>
     

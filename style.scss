@@ -1,9 +1,36 @@
-.cardSum{
+
+    $cardBgColor: gray;
+    $cardTextSize: 100%;
+    $cardPadding: 10px;
+    $cardSize: 30%;
+    $cardBorderRadius: 5px;
+    $cardWidth: 20%;
+    $cardHeight: 100px;
+
+
+.cardCalc{
     
-    background-color: gray;
-    padding: 2px;
-    border-radius: 2px;
-    size: 500%;
+    background-color: $cardBgColor;
+    padding: $cardPadding;
+    border-radius: $cardBorderRadius;
+    size: $cardSize;
+    font-size: $cardTextSize;
+    width: $cardWidth;
+    height: $cardHeight;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardConcatenate{
+
+    background-color: $cardBgColor;
+    padding: $cardPadding;
+    border-radius: $cardBorderRadius;
+    size: $cardSize;
+    font-size: $cardTextSize;
+    width: $cardWidth;
+    height: $cardHeight;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 
 h1{
