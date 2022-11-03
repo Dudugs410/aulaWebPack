@@ -1,25 +1,73 @@
-.cardCalc {
-  background-color: gray;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.parent .cardCalc {
+  background-color: #e5cddc;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 0px;
   size: 30%;
   font-size: 100%;
-  width: 20%;
-  height: 100px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  width: 130%;
+  height: 100%;
+  box-shadow: inset 5px 5px 0px #a796a1, inset -5px -5px 0px #ffffff;
+  grid-area: 2/3/5/6;
+  margin: 5px;
 }
-
-.cardConcatenate {
-  background-color: gray;
+.parent .cardConcatenate {
+  background-color: #e5cddc;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 0px;
   size: 30%;
   font-size: 100%;
-  width: 20%;
-  height: 100px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  width: 130%;
+  height: 100%;
+  box-shadow: inset 5px 5px 0px #a796a1, inset -5px -5px 0px #ffffff;
+  grid-area: 2/7/5/10;
+  margin: 5px;
 }
 
-h1 {
-  color: blue;
+.divCabecalho {
+  color: white;
+  border: 100% white;
+  box-sizing: 100%;
+  margin: 0 auto;
+  width: 50%;
+  position: fixed;
+  right: 10%;
+  bottom: 85%;
+}
+
+.buttonClass {
+  font-size: 20px;
+  padding: 10px 24px;
+  background-color: aquamarine;
+  border-radius: 8px;
+  width: 50%;
+  margin: 2px;
+  display: inline-block;
+  text-align: center;
+}
+
+.inputClass {
+  margin: 10px;
+  border-radius: 8px;
+  padding: 2%;
+}
+
+.resultClass {
+  color: rgb(63, 46, 75);
+  font-size: 30px;
+  padding: 5px 5px 5px 5px;
+  background-color: azure;
+  border-radius: 8px;
+  height: 50px;
+  width: 92%;
+}
+
+body {
+  background-color: rgb(63, 46, 75);
 }/*# sourceMappingURL=style.css.map */

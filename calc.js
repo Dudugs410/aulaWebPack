@@ -1,4 +1,3 @@
-//const { Module } = require("webpack");
 
 function Sum(num_01, num_02){
     
@@ -74,7 +73,4 @@ function Divide(){
     document.querySelector("#resultOp").innerHTML = resultado
 
 }
-
-module.exports.executeSum = executeSum;
-module.exports.sum = sum;
 

@@ -5,42 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <script src="calc.js"></script>
     <script src="full_name.js"></script>
     
     <title>Exercício Obrigatório</title>
 </head>
-<body>
+<body class="parent">
     
-    <h1>Ola GitHub</h1>
+    <h1 class="divCabecalho">Ola GitHub</h1>
     
     <div class="cardCalc">
 
-        <div><input type="text" placeholder="Type a Number" id="num_01"></div>
-        <div><input type="text" placeholder="Type a Number" id="num_02"></div>
+        <div><input class="inputClass" type="text" placeholder="Type a Number" id="num_01"></div>
+        <div><input class="inputClass" type="text" placeholder="Type a Number" id="num_02"></div>
         
         <div>
-            <button id="execSum" onclick="Sum()">Sum</button>
-            <button id="execSub" onclick="Sub()">Sub</button>
+            <button class="buttonClass" id="execSum" onclick="Sum()">Sum</button>
+            <button class="buttonClass" id="execSub" onclick="Sub()">Sub</button>
         </div>
 
         <div>
-            <button id="execMult" onclick="Mult()">Mult</button>
-            <button id="execDiv" onclick="Divide()">Div</button>
+            <button class="buttonClass" id="execMult" onclick="Mult()">Mult</button>
+            <button class="buttonClass" id="execDiv" onclick="Divide()">Div</button>
         </div>
         
         <div>Result: </div>
-        <p id="resultOp"></p>
+        <p class="resultClass" id="resultOp"></p>
 
     </div>
 
     <div class="cardConcatenate">
 
-        <div><input type="text" placeholder="Enter First Name" id="name"></div>
-        <div><input type="text" placeholder="Enter Last Name" id="lastName"></div>
-        <div><button id="execConcatenate" onclick="executeConcatenation()">Concatenate</button></div>
+        <div><input class="inputClass" type="text" placeholder="Enter First Name" id="name"></div>
+        <span></span>
+        <div><input class="inputClass" type="text" placeholder="Enter Last Name" id="lastName"></div>
+        <div><button class="buttonClass" id="execConcatenate" onclick="executeConcatenation()">Concatenate</button></div>
         <div>Result: </div>
-        <p id="fullName"></p>
+        <p class="resultClass" id="fullName"></p>
 
     </div>
     

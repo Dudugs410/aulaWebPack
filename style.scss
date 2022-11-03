@@ -1,38 +1,97 @@
 
-    $cardBgColor: gray;
+    
+    
+    $cardBgColor:#e5cddc;
     $cardTextSize: 100%;
     $cardPadding: 10px;
     $cardSize: 30%;
-    $cardBorderRadius: 5px;
-    $cardWidth: 20%;
-    $cardHeight: 100px;
+    $cardWidth: 130%;
+    $cardHeight: 100%;
+    $cardBorderRadius: 0px;
+    $cardBoxShadow: inset 5px 5px 0px #a796a1,
+    inset -5px -5px 0px #ffffff;
+    $cardMargin: 5px;
+    $mainBgColor : rgb(63, 46, 75);
 
 
-.cardCalc{
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     
-    background-color: $cardBgColor;
-    padding: $cardPadding;
-    border-radius: $cardBorderRadius;
-    size: $cardSize;
-    font-size: $cardTextSize;
-    width: $cardWidth;
-    height: $cardHeight;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    .cardCalc{
+    
+        background-color: $cardBgColor;
+        padding: $cardPadding;
+        border-radius: $cardBorderRadius;
+        size: $cardSize;
+        font-size: $cardTextSize;
+        width: $cardWidth;
+        height: $cardHeight;
+        box-shadow: $cardBoxShadow;
+        grid-area: 2 / 3 / 5 / 6; 
+        margin: $cardMargin;
+        
+    }
+    
+    .cardConcatenate{
+    
+        background-color: $cardBgColor;
+        padding: $cardPadding;
+        border-radius: $cardBorderRadius;
+        size: $cardSize;
+        font-size: $cardTextSize;
+        width: $cardWidth;
+        height: $cardHeight;
+        box-shadow: $cardBoxShadow;
+        grid-area: 2 / 7 / 5 / 10;
+        margin: $cardMargin;
+    
+    }
+}
+.divCabecalho{
+    color: white;
+    border: 100% white;
+    box-sizing: 100%;
+    margin: 0 auto;
+    width: 50%;
+    position: fixed; right: 10%; bottom: 85%;
 }
 
-.cardConcatenate{
+.buttonClass{
+    font-size: 20px;
+    padding: 10px 24px;
+    background-color: aquamarine;
+    border-radius: 8px;
+    width: 50%;
+    margin: 2px;
+    display: inline-block;
+    text-align: center;
+}
 
-    background-color: $cardBgColor;
-    padding: $cardPadding;
-    border-radius: $cardBorderRadius;
-    size: $cardSize;
-    font-size: $cardTextSize;
-    width: $cardWidth;
-    height: $cardHeight;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.inputClass{
+    margin: 10px;
+    border-radius: 8px;
+    padding: 2%
 
 }
 
-h1{
-    color: blue;
+.resultClass{
+
+    color: $mainBgColor;
+    font-size: 30px;
+    padding: 5px 5px 5px 5px;
+    background-color: azure; 
+    border-radius: 8px;
+    height: 50px;
+    width: 92%;
 }
+
+body{
+    background-color: $mainBgColor;
+}
+
